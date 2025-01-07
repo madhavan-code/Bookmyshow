@@ -6,7 +6,7 @@ import { Data } from "../Home/Data";
 import './Navbar.css'
 import { BsFillPersonFill,BsFillPersonPlusFill,BsSearch } from "react-icons/bs";
 
-function CustomNavbar() {
+const CustomNavbar=()=> {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("authToken"));
   const [searchQuery, setSearchQuery] = useState("");
   const [searchSuggestions, setSearchSuggestions] = useState([]);
@@ -78,7 +78,7 @@ function CustomNavbar() {
                 <NavDropdown.Item as={Link} to="/rewards">
                   Rewards
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/notifications">
+                <NavDropdown.Item >
                   Notifications
                 </NavDropdown.Item>
                 <NavDropdown.Divider />

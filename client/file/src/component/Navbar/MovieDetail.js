@@ -12,11 +12,13 @@ const navigate= useNavigate();
 };
 
   return (
+    <div className='h'>
     <div className="movie-detail">
-      <h5>{item.name}</h5>
+      
       <img src={item.img} alt={item.name}  />
-
+      <div>{item.name}</div>
       <button onClick={()=>handleMovieSelect(item)}>Book Now</button>
+    </div>
     </div>
   );
 };

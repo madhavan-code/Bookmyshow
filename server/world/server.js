@@ -27,7 +27,7 @@ db.connect((err) => {
   }
   console.log("Connected to MySQL database.");
 });
-// Use JWT for token generation
+
 
 app.post('/register', async (req, res) => {
     const { email, password } = req.body;
@@ -51,7 +51,7 @@ app.post('/register', async (req, res) => {
                 return res.status(500).json({ success: false, message: 'Registration failed' });
             }
 
-            // Generate a token for the user
+          
            
 
             res.status(201).json({

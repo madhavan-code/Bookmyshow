@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './Register.css';
+import './Login.css';
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -27,8 +27,9 @@ const Register = () => {
     };
 
     return (
-        <div>
-            <h2>Register</h2>
+        <div className='l'>
+        <div className='log'>
+            <h5>Register</h5>
             {message && <p>{message}</p>}
             <form onSubmit={handleRegister}>
                 <div>
@@ -60,7 +61,8 @@ const Register = () => {
                     Already Registered? Login
                 </button>
             </form>
-        </div>
+        </div></div>
+
     );
 };
 

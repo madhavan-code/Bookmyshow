@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Data } from './Data';
+import {Data} from './Data';
 import { useState } from 'react';
 import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
