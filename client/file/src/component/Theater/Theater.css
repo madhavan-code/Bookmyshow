@@ -1,0 +1,165 @@
+
+.theaters-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+.date-selector {
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+    overflow-x: auto;
+}
+.back-button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+   margin: 0;
+   gap:10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+.date-button {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 60px;
+  height: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+.month {
+    font-size: 12px;
+  }
+  
+  .date {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .day {
+    font-size: 14px;
+    color: #777;
+  }
+
+.date-button.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.date-button:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+.theater-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: space-evenly;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.theater-card.selected {
+    border-color: #007bff;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.theater-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.theater-card h3 {
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.theater-card p {
+    margin: 0 0 15px;
+    color: #555;
+}
+
+/* Time slots styling */
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+}
+
+.time-button {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.time-button:hover {
+    background-color: #007bff;
+    
+    border-color: #007bff;
+}
+
+.time-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Next button styling */
+.next-button {
+    display: block;
+    margin: 30px auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 480px) {
+.theaters-container{font-size: small; padding: 10px;}
+    .theater-card {
+        width: 500px;
+        justify-content: space-between;
+        display: block;
+    }}

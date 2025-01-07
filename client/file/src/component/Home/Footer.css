@@ -1,0 +1,33 @@
+
+.footer {
+    margin-top: 20px;  
+    bottom: 0;       
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 100;      
+  }
+  
+  .footer-content p {
+    text-align: center;
+    margin: 0;  
+  }
+  .line-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.line {
+  height: 2px;  
+  background-color: rgb(77, 76, 76);  
+  flex-grow: 1;
+}
+
+.gap {
+
+ margin: 10px;
+}

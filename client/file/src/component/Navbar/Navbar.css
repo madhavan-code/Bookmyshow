@@ -1,0 +1,62 @@
+/* Suggestions Dropdown */
+.search-suggestions {
+    position: absolute;
+    
+    left: auto;
+    right: 0;
+    z-index: 1000;
+  top: 50px;
+    width: fit-content;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0;
+  }
+  
+  .search-suggestions .dropdown-item {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .top{
+    padding:10px;
+    background-color: goldenrod;
+  }
+  .search-suggestions .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+  /* Offcanvas Styles */
+.offcanvas-body {
+  padding: 0;
+}
+.box {
+  position: relative;
+  width: 200px; /* Adjust width as needed */
+  height: 30px;
+  margin-top: 5px; /* Adjust height as needed */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 40px; /* Space for the icon */
+}
+.i{font-size: 22px;}
+.box-icon {
+  position: absolute;
+  left: 10px; /* Distance from the left edge */
+  font-size: 16px;
+  color: #888; /* Icon color */
+}
+
+.box-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: #333; /* Text color */
+}
+

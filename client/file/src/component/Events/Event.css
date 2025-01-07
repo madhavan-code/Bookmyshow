@@ -1,0 +1,142 @@
+
+.event-container {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .event-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  
+  .category-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .category-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #ddd;
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  
+  .category-btn.active {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .category-btn:hover {
+    background: #0056b3;
+    color: #fff;
+  }
+  
+  .items-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+
+  .item-card {
+    background: #f8f9fa;
+  overflow: hidden;
+height: 415px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .item-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .item-img {
+    width: 100%;
+    height: 350px;
+    
+    border-radius: 8px;
+  }
+  
+  
+  .item-name {
+   
+    
+    color: #333;
+  }
+  
+  
+  .book-btn {
+    width: 100%;
+    padding: 5px 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .book-btn:hover {
+    background: #218838;
+  }
+  
+.carousel-img {
+  width: 100%;
+  border-radius: 30px; 
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  
+  .event-container {
+      padding: 10px;
+      font-size: 1rem;
+      
+  }
+.item-name{font-size:10px;}
+  .items-grid {
+      
+      gap: 15px;
+  }
+
+  .item-card {
+      width: 100px; 
+      height: 200px;
+       
+  }
+
+  
+  .item-img  {
+      height: 150px; 
+  }
+
+  
+  .carousel-img {
+      height: 100px;
+      width: 100%;
+      border-radius: 10px;
+     
+  }
+
+  
+  .book-btn {
+    padding: 0px;
+      font-size: 8px; 
+  }
+}
+
+
+
