@@ -16,7 +16,7 @@ function Ticket() {
     const handleDelete = (ticketId) => {
         if (window.confirm("Are you sure you want to delete this ticket?")) {
             axios
-                .delete(`http://localhost:6060/delete/${ticketId}`)
+                .delete(`https://bookmyshow-4mei.onrender.com/delete/${ticketId}`)
                 .then((response) => {
                     console.log(response.data)
                     setTicketDetails(ticketDetails.filter((ticket) => ticket.id !== ticketId));
