@@ -41,7 +41,7 @@ function Seats() {
         const totalAmount = selectedSeats.length * seatPrice;
         const ticketDetails = {  movie: { name: movie.name, img: movie.img },  theater, date, time, seats: selectedSeats, amount: totalAmount };
         axios
-            .post("https://bookmyshow-4mei.onrender.com/api/bookings", ticketDetails, {
+            .post("http://localhost:6060/api/bookings", ticketDetails, {
                 headers: { Authorization: `Bearer ${localStorage.getItem("authToken")}` },
             })
             .then(() => {
