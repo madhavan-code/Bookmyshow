@@ -133,6 +133,8 @@ app.delete("/delete/:id", (req, res) => {
   });
 });
 
-app.listen(6060, () => {
-    console.log("Server is running on port 6060");
+const port = process.env.PORT || 6060;  
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
 });
+
