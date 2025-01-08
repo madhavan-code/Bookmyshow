@@ -15,7 +15,7 @@ const Login = () => {
         setError('');
 
         try {
-            const response = await axios.post('http://localhost:6060/login', { email, password });
+            const response = await axios.post('https://bookmyshow-4mei.onrender.com/login', { email, password });
             const { success, message, token } = response.data;
 
             if (success) {
