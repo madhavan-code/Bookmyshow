@@ -14,10 +14,11 @@ app.use(express.json());
 
 
 const db = mysql.createConnection({
-    host: process.env.DB_HOST || "localhost",
-    user: process.env.DB_USER || "root",
-    password: process.env.DB_PASSWORD || "Madhav@54",
-    database: process.env.DB_NAME || "booking",
+    host: process.env.DB_HOST || "b1lu9jcdag6uhksop76p-mysql.services.clever-cloud.com",
+    user: process.env.DB_USER || "utvasls0zk3ocno0",
+    password: process.env.DB_PASSWORD || "zdRrULnErNsUcULJ1QPx",
+    database: process.env.DB_NAME || "b1lu9jcdag6uhksop76p",
+    port:process.env.DB_PORT || 3306
 });
 
 db.connect((err) => {
