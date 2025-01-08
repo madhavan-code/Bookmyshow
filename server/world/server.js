@@ -133,7 +133,7 @@ app.delete("/delete/:id", (req, res) => {
   });
 });
 
-const port = process.env.PORT || 6060;  
+const port = 6060;  
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
