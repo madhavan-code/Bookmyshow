@@ -14,7 +14,7 @@ const Register = () => {
         setMessage('');
 
         try {
-            const response = await axios.post('http://localhost:6060/register', { email, password });
+            const response = await axios.post('https://bookmyshow-4mei.onrender.com/register', { email, password });
             setMessage(response.data.message);
 
         
