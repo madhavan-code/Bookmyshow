@@ -8,7 +8,7 @@ import { Carousel } from "react-bootstrap";
 const Event = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  
+  const navigate=useNavigate();
   const handleCategoryClick = (category) => {
     setSelectedCategory(category); 
   };
