@@ -54,15 +54,15 @@ function Seats() {
     };
 
     const rows = "ABCDEFGHIJKL".split(""); // First class rows
-    const columns = Array.from({ length: 17 }, (_, i) => i + 1); // Column numbers
+    const columns = Array.from({ length: 12 }, (_, i) => i + 1); // Column numbers
 
     const renderSeats = (rowList, isSecondClass = false) => (
         <>
             {rowList.map((row) => (
             
-                <div key={row} className="row-container">
+                <div key={row} className="row">
                     <span className="row-label">{row}</span>
-                    <div className="row">
+                  
                     {columns.map((col) => {
                         const seat = `${row}-${col}`;
                         const isSold = soldSeats.includes(seat);
@@ -82,7 +82,7 @@ function Seats() {
                         );
                     })}
                 </div>
-                </div>
+                
                 
             ))}
         </>
@@ -123,14 +123,14 @@ function Seats() {
                     <span>Sold</span>
                 </div>
             </div>
-            <div className="scroll">
+           
             <div className="seat-container-wrapper">
             <h5 className="left">First Class</h5>
                {renderSeats(rows)}
                 <h5 className="left">Second Class</h5>
                 {renderSeats(secondClassRows, true)}
             </div>
-            </div>
+            
             <div className="total-amount">Total Amount: ₹{selectedSeats.length * seatPrice}</div>
            <center> <button
                 className="pay-button"

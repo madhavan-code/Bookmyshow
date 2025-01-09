@@ -35,25 +35,17 @@ h2, h3 {
 }
 /* Seat Layout Styles */
 .seat-container-wrapper {
-    
-    
-    display: flex;
+     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     
     margin-top: 20px;
 }
-.row-container{
 
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    overflow-x: auto;
-}
 .row {
-     display: inline-flex;
-    
+     display: flex;
+    text-align: center;
 gap: 5px;
 }
 
@@ -158,11 +150,12 @@ gap: 5px;
     cursor: not-allowed;
 }
 @media (max-width: 480px) {
-    *{font-size: small;}
+
+    .hd{font-size: 10px;font-weight: normal;}
+.left{font-size: 10px;}
     .seat-container-wrapper {
         padding: 0px;
-        
-    }
+        }
     .row {
         gap: 2px;
     
@@ -179,8 +172,7 @@ gap: 5px;
     }
 
 .seat-selection{padding: 10px;}
-.hd{font-size: 10px;font-weight: normal;}
-.left{font-size:10px; margin-right: 0px;}
+
 .total-amount{font-size:10px; margin-left: 0px; margin-top: 0px;}
 
 .seat-container{gap: 5px;  padding: 10px;}
