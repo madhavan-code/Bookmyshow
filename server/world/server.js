@@ -102,7 +102,7 @@ app.post('/api/bookings', (req, res) => {
   const { movie, theater, date, time, seats, amount } = req.body;
 
   const seatsString = seats.join(', ');
-  const sql = 'INSERT INTO bookings (movie_name, movie_img, theater_name, date, time, seats, amount) VALUES (?, ?, ?, ?, ?, ?, ?)';
+  const sql = 'INSERT INTO bookings (movie_name,theater_name, date, time, seats, amount,movie_img) VALUES (?, ?, ?, ?, ?, ?, ?)';
   const values = [movie.name, theater.name, date, time, seatsString, amount, movie.img];
 
   db.query(sql, values, (err, result) => {
