@@ -74,7 +74,7 @@
     border: none;
     padding: 5px 10px;
 
-    border-radius: 5px;
+    border-radius: 4px;
     transition: background-color 0.3s;
 }
 
@@ -89,7 +89,7 @@
         font-size: 1rem;
        h5{font-size: 1rem;}
     }
-.card p{font-size:10px;}
+.card p{font-size:12px;}
     
     .grid {
         
@@ -118,5 +118,6 @@
     
     .card .btn{
         font-size: 8px; 
+        padding:2px 5px ;
     }
 }

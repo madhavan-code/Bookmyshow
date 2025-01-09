@@ -48,12 +48,12 @@
 
   .item-card {
     background: #f8f9fa;
-  overflow: hidden;
-height: 415px;
+    height: 415px;
+
     text-align: center;
     width: 220px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease
   }
   
   .item-card:hover {
@@ -65,7 +65,7 @@ height: 415px;
     width: 100%;
     height: 350px;
     
-    border-radius: 8px;
+    border-radius: 4px;
   }
   
   
@@ -82,7 +82,7 @@ height: 415px;
     background: #28a745;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
     transition: background 0.3s ease;
@@ -106,7 +106,7 @@ height: 415px;
       font-size: 1rem;
       
   }
-.item-name{font-size:10px;}
+.item-name{font-size:12px;}
   .items-grid {
       
       gap: 15px;
@@ -133,7 +133,7 @@ height: 415px;
 
   
   .book-btn {
-    padding: 0px;
+    padding: 2px 5px;
       font-size: 8px; 
   }
 }

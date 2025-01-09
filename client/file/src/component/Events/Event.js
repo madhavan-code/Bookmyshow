@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { categories, items } from "./Category";
+import { categories, items} from "./Category";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
 import "./Event.css"; // 
@@ -12,11 +12,11 @@ const Event = () => {
     setSelectedCategory(category); 
   };
 
-  const handleMovieSelect = (item) => {
-    navigate('/theaters', { state: { item } });
+  const handleMovieSelect = (movie) => {
+    navigate('/theaters', { state: { movie } });
 };
   const filteredItems = items.filter(
-    (item) => selectedCategory === "All" || item.category === selectedCategory
+    (movie) => selectedCategory === "All" || movie.category === selectedCategory
   );
 const [activeIndex, setActiveIndex] = useState(0); // 
 
@@ -56,11 +56,11 @@ const [activeIndex, setActiveIndex] = useState(0); //
 
       {/* Items Grid */}
       <div className="items-grid">
-        {filteredItems.map((item) => (
-          <div className="item-card" key={item.id}>
-            <img src={item.img} alt={item.name} className="item-img" />
-            <div className="item-name">{item.name}</div>
-            <button className="book-btn" onClick={()=>handleMovieSelect(item)}>Book</button>
+        {filteredItems.map((movie) => (
+          <div className="item-card" key={movie.id}>
+            <img src={movie.img} alt={movie.name} className="item-img" />
+            <div className="item-name">{movie.name}</div>
+            <button className="book-btn" onClick={()=>handleMovieSelect(movie)}>Book</button>
           </div>
         ))}
       </div>

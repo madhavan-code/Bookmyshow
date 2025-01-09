@@ -66,4 +66,44 @@ height: 415px;
     object-fit: cover;
   }
   
+@media (max-width: 480px) {
+    
+    .movies-container {
+        padding: 10px;
+        font-size: 1rem;
+       h5{font-size: 1rem;}
+    }
+.name{font-size:12px;}
+    
+    .movies-grid {
+        
+        gap: 15px;
+    }
+
+    
+    .movie-card {
+        width: 100px; 
+        height: 200px;
+         
+    }
+
+
+    .movie-img {
+        height: 150px; 
+    }
+
+
+    .carousel-img {
+        height: 100px;
+        width: 100%;
+        border-radius: 10px;
+       
+    }
   
+
+    
+    .movie-card button{
+        font-size: 8px; 
+        padding: 2px 5px;
+    }
+}

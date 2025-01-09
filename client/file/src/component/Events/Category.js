@@ -1,6 +1,6 @@
 export const categories = ["All", "Music", "Comedy", "Kids"];
 
-export const items = [
+export const items= [
   { id: 1, name: "Once Upon A Time", category: "Music", img: "/images/music.jpg" },
   { id: 1, name: "Yuvan Rock", category: "Music", img: "/images/music2.jpg" },
   { id: 1, name: "A.R.Rahaman concert", category: "Music", img: "/images/music 3.jpg" },
