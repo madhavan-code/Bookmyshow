@@ -12,7 +12,9 @@ const Event = () => {
     setSelectedCategory(category); 
   };
 
-
+  const handleMovieSelect = (item) => {
+    navigate('/theaters', { state: { item } });
+};
   const filteredItems = items.filter(
     (item) => selectedCategory === "All" || item.category === selectedCategory
   );
@@ -58,7 +60,7 @@ const [activeIndex, setActiveIndex] = useState(0); //
           <div className="item-card" key={item.id}>
             <img src={item.img} alt={item.name} className="item-img" />
             <div className="item-name">{item.name}</div>
-            <button className="book-btn">Book</button>
+            <button className="book-btn" onClick={()=>handleMovieSelect(item)}>Book</button>
           </div>
         ))}
       </div>
