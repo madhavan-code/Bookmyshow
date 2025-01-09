@@ -37,11 +37,12 @@ function Seats() {
             navigate("/login");
             return;
         }
+        const backendURL = process.env.REACT_APP_BACKEND_URL;
 
         const totalAmount = selectedSeats.length * seatPrice;
         const ticketDetails = {  movie: { name: movie.name, img: movie.img },  theater, date, time, seats: selectedSeats, amount: totalAmount };
         axios
-            .post("https://bookmyshow-4mei.onrender.com/api/bookings", ticketDetails, {
+            .post(`${backendURL}/api/bookings`, ticketDetails, {
                 headers: { Authorization: `Bearer ${localStorage.getItem("authToken")}` },
             })
             .then(() => {

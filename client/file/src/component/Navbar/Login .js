@@ -9,13 +9,13 @@ const Login = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
-
+    const backendURL = process.env.REACT_APP_BACKEND_URL;
     const handleLogin = async (e) => {
         e.preventDefault();
         setError('');
 
         try {
-            const response = await axios.post('https://bookmyshow-4mei.onrender.com/login', { email, password });
+            const response = await axios.post(`${backendURL}/login`, { email, password });
             const { success, message, token } = response.data;
 
             if (success) {

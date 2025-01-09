@@ -4,19 +4,19 @@ import './Ticket.css';
 
 function Ticket() {
     const [ticketDetails, setTicketDetails] = useState([]);
-
+    const backendURL = process.env.REACT_APP_BACKEND_URL;
     useEffect(() => {
         axios
-            .get('http://localhost:6060/api/bookings')
+            .get(`${backendURL}/api/bookings`)
             .then((response) => setTicketDetails(response.data))
             .catch((error) => console.error('Error fetching bookings:', error));
-    }, []);
+    }, [backendURL]);
 
     
     const handleDelete = (ticketId) => {
         if (window.confirm("Are you sure you want to delete this ticket?")) {
             axios
-                .delete(`https://bookmyshow-4mei.onrender.com/delete/${ticketId}`)
+                .delete(`${backendURL}/delete/${ticketId}`)
                 .then((response) => {
                     console.log(response.data)
                     setTicketDetails(ticketDetails.filter((ticket) => ticket.id !== ticketId));

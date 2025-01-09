@@ -8,13 +8,13 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
     const navigate = useNavigate();
-
+    const backendURL = process.env.REACT_APP_BACKEND_URL;
     const handleRegister = async (e) => {
         e.preventDefault();
         setMessage('');
 
         try {
-            const response = await axios.post('https://bookmyshow-4mei.onrender.com/register', { email, password });
+            const response = await axios.post(`${backendURL}/register`, { email, password });
             setMessage(response.data.message);
 
         
