@@ -106,7 +106,7 @@
       font-size: 1rem;
       
   }
-.item-name{font-size:12px;}
+.item-name{font-size:11px;}
   .items-grid {
       
       gap: 15px;
@@ -114,7 +114,7 @@
 
   .item-card {
       width: 100px; 
-      height: 200px;
+      height: 190px;
        
   }
 

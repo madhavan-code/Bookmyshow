@@ -59,8 +59,10 @@ function Seats() {
     const renderSeats = (rowList, isSecondClass = false) => (
         <>
             {rowList.map((row) => (
-                <div key={row} className="row">
+            
+                <div key={row} className="row-container">
                     <span className="row-label">{row}</span>
+                    <div className="row">
                     {columns.map((col) => {
                         const seat = `${row}-${col}`;
                         const isSold = soldSeats.includes(seat);
@@ -80,12 +82,14 @@ function Seats() {
                         );
                     })}
                 </div>
+                </div>
+                
             ))}
         </>
     );
 
     return (
-        <div className="seat-selection">
+       <>
             <div className="hd">
             <span>
             <button className="back-button" onClick={() => navigate(-1)}><BsChevronLeft /></button>
@@ -104,6 +108,7 @@ function Seats() {
           </div>
             </div>
             </div>
+             <div className="seat-selection">
             <div className="legend">
                 <div className="legend-item">
                     <div className="legend-color available"></div>
@@ -118,14 +123,14 @@ function Seats() {
                     <span>Sold</span>
                 </div>
             </div>
-            
-            <div className="seat-container">
+            <div className="scroll">
+            <div className="seat-container-wrapper">
             <h5 className="left">First Class</h5>
-                {renderSeats(rows)}
+               {renderSeats(rows)}
                 <h5 className="left">Second Class</h5>
                 {renderSeats(secondClassRows, true)}
             </div>
-            
+            </div>
             <div className="total-amount">Total Amount: ₹{selectedSeats.length * seatPrice}</div>
            <center> <button
                 className="pay-button"
@@ -135,6 +140,7 @@ function Seats() {
                 Pay
             </button></center>
         </div>
+        </>
     );
 }
 

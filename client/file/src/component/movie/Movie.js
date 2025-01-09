@@ -44,7 +44,7 @@ const Movie = () => {
       </Carousel>
 
 
-      <h5> Select a movies</h5>
+      
       <div className="grid">
 
         {Details.map((movie) => (
@@ -57,7 +57,7 @@ const Movie = () => {
               className="btn btn-primary"
               onClick={() => handleMovieSelect(movie)}
             >
-              Book
+              Book Ticket
             </button>
           </div>
         ))}

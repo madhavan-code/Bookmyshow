@@ -54,13 +54,13 @@ function Theaters() {
     };
 
     return (
-        <div className="theaters-container">
+       <>
             <div className="header">
                 <button className="back-button" onClick={() => navigate(-1)}><BsChevronLeft /></button>
                 <div className="movie-title">{movie.name}</div>
             </div>
 
-            
+<div className="theaters-container"> 
             <div className="date-selector">
                 {filteredDates.map((item) => (
                     <div
@@ -102,6 +102,7 @@ function Theaters() {
 
            
         </div>
+        </>
     );
 }
 

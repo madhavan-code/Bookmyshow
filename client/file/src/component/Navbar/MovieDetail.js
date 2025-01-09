@@ -17,7 +17,7 @@ const navigate= useNavigate();
       
       <img src={item.img} alt={item.name}  />
       <div>{item.name}</div>
-      <button onClick={()=>handleMovieSelect(item)}>Book Now</button>
+      <button onClick={()=>handleMovieSelect(item)}>Book Ticket</button>
     </div>
     </div>
   );

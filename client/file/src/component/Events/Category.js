@@ -3,7 +3,7 @@ export const categories = ["All", "Music", "Comedy", "Kids"];
 export const items= [
   { id: 1, name: "Once Upon A Time", category: "Music", img: "/images/music.jpg" },
   { id: 1, name: "Yuvan Rock", category: "Music", img: "/images/music2.jpg" },
-  { id: 1, name: "A.R.Rahaman concert", category: "Music", img: "/images/music 3.jpg" },
+  { id: 1, name: "Rahaman concert", category: "Music", img: "/images/music 3.jpg" },
   { id: 1, name: "Karoke", category: "Music", img: "/images/music4.jpg" },
   { id: 1, name: "Quinte Ninja", category: "Music", img: "/images/music5.jpg" },
   { id: 2, name: "Comedy show", category: "Comedy", img: "/images/comedy show.jpg" },

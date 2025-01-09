@@ -23,7 +23,7 @@ export const Details=[{id:1,
     youtubeId: "nkY7cQ9NlTw"
 },
 {id:5,
-    name: "Demonty",
+    name: "Demonty colony",
     img: "/images/demonty.jpg", 
     genre: "action, drama",
     youtubeId: "Lnf8EsVGFno"

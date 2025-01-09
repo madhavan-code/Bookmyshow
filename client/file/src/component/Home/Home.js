@@ -48,7 +48,7 @@ const Home=()=> {
                         <div className="movie-card" key={movie.id}>
                             <img src={movie.img} alt={movie.name} />
                             <p className="name">{movie.name}</p>
-                            <button onClick={() => handleMovieSelect(movie)}>Book</button>
+                            <button onClick={() => handleMovieSelect(movie)}>Book Ticket</button>
                         </div>
                     ))}
                 </div>

@@ -42,8 +42,7 @@ height: 415px;
     width:100%;
     padding: 5px 10px;
     border: none;
-    border-radius: 4px;
-    background-color: #007bff;
+background-color: #007bff;
     color: #fff;
     cursor: pointer;
     font-size: 14px;
@@ -73,7 +72,7 @@ height: 415px;
         font-size: 1rem;
        h5{font-size: 1rem;}
     }
-.name{font-size:12px;}
+.name{font-size:11px; }
     
     .movies-grid {
         
@@ -83,12 +82,13 @@ height: 415px;
     
     .movie-card {
         width: 100px; 
-        height: 200px;
-         
+        height: 198px;
+
+        
     }
 
 
-    .movie-img {
+    .movie-card img {
         height: 150px; 
     }
 
@@ -105,5 +105,7 @@ height: 415px;
     .movie-card button{
         font-size: 8px; 
         padding: 2px 5px;
+     
+        
     }
 }

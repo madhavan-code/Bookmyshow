@@ -61,7 +61,7 @@ const [activeIndex, setActiveIndex] = useState(0); //
           <div className="item-card" key={movie.id}>
             <img src={movie.img} alt={movie.name} className="item-img" />
             <div className="item-name">{movie.name}</div>
-            <button className="book-btn" onClick={()=>handleMovieSelect(movie)}>Book</button>
+            <button className="book-btn" onClick={()=>handleMovieSelect(movie)}>Book Ticket</button>
           </div>
         ))}
       </div>

@@ -93,7 +93,7 @@ export const Data = {
             
         },
         {id:12,
-            name: "A.R.Rahman Concert",
+            name: "Rahman Concert",
              img: "/images/music 3.jpg", 
             
         },
