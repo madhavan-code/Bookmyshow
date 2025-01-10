@@ -32,7 +32,7 @@ app.post('/register', async (req, res) => {
     db.query(checkQuery, [email], async (err, existingUsers) => {
       if (err) {
         console.error('Error checking existing user:', err);
-        return res.status(500).json({ success: false, message: 'Server error please wait' });
+        return res.status(500).json({ success: false, message: 'Server error! wait a minute' });
       }
 
       if (existingUsers.length > 0) {
