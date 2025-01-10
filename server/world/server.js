@@ -5,14 +5,8 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 const app = express()
-
-
 app.use(cors());
 app.use(express.json());
-
-
-
-
 const db = mysql.createConnection({
     host: process.env.DB_HOST || "b1lu9jcdag6uhksop76p-mysql.services.clever-cloud.com",
     user: process.env.DB_USER || "utvasls0zk3ocno0",
@@ -38,7 +32,7 @@ app.post('/register', async (req, res) => {
     db.query(checkQuery, [email], async (err, existingUsers) => {
       if (err) {
         console.error('Error checking existing user:', err);
-        return res.status(500).json({ success: false, message: 'Server error' });
+        return res.status(500).json({ success: false, message: 'Server error please wait' });
       }
 
       if (existingUsers.length > 0) {
