@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="footer-content">
         <p>&copy; {new Date().getFullYear()}  BigEntertainment. All Rights Reserved.</p>
         <p>The content of the images used on side are copyright protect and copyright verstes.The usage 
-          of the content and the website intended to the promote works</p>
+          of the content and the website intended to the promote works developed by maddy</p>
       </div>
     </footer>
   );

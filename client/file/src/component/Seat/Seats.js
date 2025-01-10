@@ -34,7 +34,7 @@ function Seats() {
     const handlePayment = () => {
         if (!isLoggedIn) {
             alert("Please log in to proceed with payment.");
-            navigate("/login");
+            navigate("/register");
             return;
         }
         const backendURL = process.env.REACT_APP_BACKEND_URL;
